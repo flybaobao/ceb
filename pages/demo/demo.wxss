@@ -1,0 +1,10 @@
+view{
+    background-color: #808080;
+    height: 40rpx;
+    margin-bottom: 10px;
+}
+
+text{
+    background-color: #808080;
+    height: 40rpx; 
+}

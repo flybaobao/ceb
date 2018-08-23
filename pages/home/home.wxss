@@ -1,0 +1,30 @@
+.circle-images {
+    width: 100%;
+    height: 360rpx;
+}
+
+.circle-image {
+    width: 100%;
+    height: 360rpx;
+}
+
+.announces {
+    margin-top: 15rpx;
+    height: 80rpx;
+}
+
+.announce-icon {
+    display: flex;
+    padding-left: 15rpx;
+    height: 40rpx;
+    width: 40rpx;
+}
+
+.circle-announces {
+    display: flex;
+}
+
+.announce-title {
+
+    font-size: 30rpx;
+}

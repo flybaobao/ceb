@@ -1,0 +1,95 @@
+
+page{
+    background-color:#EFEFF4;
+}
+.listview{
+      margin-top: -5px;
+}
+.container{
+    padding:0px;
+    display: flex;
+    flex-direction: column;
+     background-color:white;
+     margin-bottom: 10px;
+}
+
+.top-img{
+      height: 88rpx;
+      background-color: red;
+      width: 100%;
+}
+
+.pro-title{
+   display: flex;
+   align-items: center;
+   margin-left: 15px;
+   height:30px;
+   font-size: 16px;
+   margin-top:15px;
+}
+
+.content{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 15px;
+}
+
+.pro-item{
+      display: flex;
+      flex-direction: column;
+      justify-content:space-between;
+      align-items: center;
+      height: 40px;
+      font-size: 22px;
+}
+
+.item-title{
+      color: #AAAAAA;
+      font-size: 12px;
+}
+
+.item-small{
+      font-size: 12px;
+}
+
+.pro-item-1{
+      margin-left: 15px;
+      color: #F2424E;
+}
+
+.pro-item-3{
+      display: flex;
+      margin-right: 15px;
+}
+
+.pro-item-3 div{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      font-size: 18px;
+      border-radius: 5px 5px 5px 5px;
+      height: 25px;
+      background-color: #F2424E;
+      color: white;
+      font-size: 15px;
+
+}
+.pro-line{
+      margin: 15px 15px 15px 15px;
+}
+
+.pro-bottom{
+      margin: 0px 15px 5px 15px;
+      display: flex;
+      flex-direction: row;  
+      justify-content: space-between;
+}
+
+.pro-bottom text{
+
+      font-size: 12px;
+      color: #AAAAAA;
+      margin-bottom: 15px;
+}

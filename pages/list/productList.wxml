@@ -1,0 +1,38 @@
+<view class="body-">
+    <image class="top-img"   src="http://hxtz-8518.b0.upaiyun.com/chaoebao/icon/index/h170101_product.jpg"></image>
+    <view class ="listview" wx:for="{{productList}}">
+     <navigator url="{{navigatorURL}}?productID={{item.productID}}">
+        <view class = "container" >
+            <view class="pro-title">
+            <text>{{item.title}}</text>
+            </view>
+            <view class ="content">
+                <view class="pro-item pro-item-1">
+                    <text>{{item.yields}}<text class="item-small">%</text></text>
+                    <text class="item-title">预期年化</text>
+                </view>
+                <view class="pro-item pro-item-2">
+                    <text>{{item.daynum}}<text class="item-small">天</text></text>
+                    <text class="item-title">投资期限</text>
+                </view>
+                <view class="pro-item pro-item-3">
+                    <div><text>立即投资</text></div>
+                </view>
+            </view>
+            <view class="pro-line">
+                <progress percent="{{(item.totalMoney/item.borrowMoney)*100}}" stroke-width="4" color="#9ED8FA" active="true"></progress>
+            </view>
+            <view class="pro-bottom">
+                <text>起投金额:{{item.minInvestment}}</text>
+                <text>可投:{{item.totalMoney}}/{{item.borrowMoney}}</text>
+            </view>
+        </view>
+     </navigator>
+    </view>
+</view>
+
+
+
+
+
+    

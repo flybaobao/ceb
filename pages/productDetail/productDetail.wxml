@@ -1,0 +1,83 @@
+<view class="container">
+    <view class="content">
+           <view class="top-area-view">
+        <view class="nh-view">
+            <view class="nh-view-nh">
+                 <text class="nh-view-nh-1">{{product.baseInfo.annualIncome}}</text>
+                 <text class="nh-view-nh-2">%</text>
+            </view>
+            <view class="nh-view-title">预期年化收益</view>
+        </view>
+        <view class="progress-view">
+            <view class="progress-titleview">
+                <text>{{incomeDuration}}</text>
+                <text>起投:{{product.baseInfo.minInvestment}}元</text>
+            </view>
+            <view class="progress-progressleview">
+                <progress percent="{{(product.baseInfo.totalMoney/product.baseInfo.borrowMoney)*100}}" stroke-width="4" color="#9ED8FA" active="true"/>
+            </view>
+        </view>
+        <view class="btns-view">
+            <view>
+                <image src="images/p1.png"></image>
+                <text class="btn-title">项目详情</text>
+            </view>
+            <view>
+                <image src="images/p2.png"></image>
+                <text class="btn-title">安全保障</text>
+            </view>
+            <view>
+                 <image src="images/p3.png"></image>
+                 <text class="btn-title">投资记录</text>
+            </view>
+        </view>
+    </view>
+
+    <view class="center-area-view">
+        <view class="center-line-view-cell">
+            <view class="cell-contentview">
+                <view><text class="activetitle">{{product.activityDetail.title}}</text></view>
+                <image class="jiantou" src="../resource/jiantou.png"></image>
+            </view>
+        </view>
+        <view class="center-line-view-cell">
+            <view class="cell-contentview">
+                <view><text class="celltitle">还款方式:{{product.baseInfo.repayment}}</text>
+                </view>
+            </view>
+        </view>
+        <view class="center-line-view-cell">
+            <view class="cell-contentview">
+                <view><text class="celltitle">起息方式:{{product.baseInfo.interestDesc}}</text></view>
+            </view>
+        </view>
+         <view class="center-line-view-cell">
+            <view class="cell-contentview">
+                <view><text  class="celltitle">支持的银行</text></view>
+                <view class="cell-sub">
+                    <view><text  class="celldetailtitle">{{product.supportBank.bankList.length}}家</text></view>
+                                    <image class="jiantou" src="../resource/jiantou.png"></image>
+                </view>
+            </view>
+        </view>
+        <view class="center-subarea">
+            <view class="center-subarea-to">
+                <view class="sy-view">
+                    <text class="sy-title">剩余额度(元) <text class="sy-count">{{product.baseInfo.totalMoney}}</text></text>
+                    
+                </view>
+                <view><text class="sy-btn">全投</text></view>
+            </view>
+            <view class="tz-input-view">
+                <view bindtap="sub">-</view>
+                <view class="tz"><input type="number" placeholder="输入投资金额"/><text class="tz-yuan">元</text>
+                </view>
+                <view bindtap="add">+</view>
+            </view>
+        </view>            
+    </view>
+    </view>
+    <view class ="bottom">
+        <view class="bt-tz"><text>立即投资</text></view>
+     </view>  
+</view>

@@ -1,0 +1,18 @@
+<view class="container">
+    <form bindsubmit="loginClick">
+       <view class="data-view">
+            <view>
+                <input name="mobile" placeholder-style="color:#CFCFCF;font-size:16px" class="mobile" type="number" placeholder="请输入手机号码"/>
+                <view class="line"></view>
+                 <input name="password"  placeholder-style="color:#CFCFCF;font-size:16px" class="password"  password="true" placeholder="请输入密码"/>
+                 <view class="line"></view>
+            </view>
+            <view class="btn-area">
+                 <button formType="submit">登录</button>
+             </view>
+       </view>
+     </form>
+     <view class="regist">
+        <text bindtap ="registClick">立即注册</text>
+     </view>
+</view>

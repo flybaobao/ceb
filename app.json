@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/list/productList",
+    "pages/productDetail/productDetail",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/signup/signup",
+    "pages/home/home",
+    "pages/myinvest/myinvest"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "red",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"white"
+  },
+ "tabBar": {
+      "list": [{
+        "pagePath": "pages/home/home",
+        "text": "热销",
+        "iconPath": "pages/resource/home_financing.png",
+        "selectedIconPath": "pages/resource/home_financing_selected.png"
+      },
+      {
+        "pagePath": "pages/list/productList",
+        "text": "理财",
+        "iconPath": "pages/resource/home_financing.png",
+        "selectedIconPath": "pages/resource/home_financing_selected.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "账户",
+        "iconPath": "pages/resource/home_account.png",
+        "selectedIconPath": "pages/resource/home_account_selected.png"
+      }]
+    }
+}

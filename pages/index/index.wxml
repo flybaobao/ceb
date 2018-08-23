@@ -1,0 +1,96 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="info-view">
+    <view class="redView">
+      <view class="info-top">
+        <view class="userInfo">
+          <view class="userInfo-head">
+            <image src="{{user.userIco}}"></image>
+          </view>
+          <view class="userInfo-detail">
+           <view>
+            <text class="name">{{centerData.realName}}</text>
+           </view>
+           <view>
+            <text class="v">已完成身份认证<image src=""></image></text>
+           </view>
+          </view>
+        </view>
+        <view class="setting-view" bindtap="gotoSetting">
+          <text>设置</text>
+        </view>
+      </view>
+    </view>
+    <view class="asset">
+      <view class="totalAsset"><text >{{centerData.totalAssets}}</text></view>
+      <view><text>我的总资产(元)</text></view>
+    </view>
+    <view class="info-bottom">
+      <view class="text-center">
+        <view class="amount"><text>{{centerData.availableBalance}}</text></view>
+        <view>
+         <text class="amountTitle">账户余额(元)</text>
+       </view>
+      </view>
+      <view class="text-center">
+        <view class="amount"><text>{{incomeTotal}}</text></view>
+        <view>
+         <text class="amountTitle">总共赚取(元)</text>
+       </view>
+      </view>
+    </view>
+  </view>
+  <view class="pay-view">
+    <view><image src="../resource/withdraw@2x.png"></image><text>提现</text></view>
+    <view><image src="../resource/recharge@2x.png"></image><text>充值</text></view>
+  </view>
+  <view class="gird-view">
+    <view class="gird-item">
+      <view class="gird-content">
+        <view class="gird-image"><image src="../resource/myInvest@2x.png"></image></view>
+        <view class="gird-title" bindtap="gotoMyinvest"><text>我的投资</text></view>
+        <view class="gird-des"><text></text></view>
+      </view>
+    </view>
+        <view class="gird-item">
+      <view class="gird-content">
+        <view class="gird-image"><image src="../resource/captialRecord@2x.png"></image></view>
+        <view class="gird-title"><text>资金记录</text></view>
+        <view class="gird-des"><text></text></view>
+      </view>
+    </view>
+        <view class="gird-item">
+      <view class="gird-content">
+        <view class="gird-image"><image src="../resource/voucher@2x.png"></image></view>
+        <view class="gird-title"><text>我的优惠</text></view>
+        <view class="gird-des"><text></text></view>
+      </view>
+    </view>
+        <view class="gird-item bottom-item">
+      <view class="gird-content">
+        <view class="gird-image"><image src="../resource/recommend@2x.png"></image></view>
+        <view class="gird-title"><text>推荐有奖</text></view>
+        <view class="gird-des"><text></text></view>
+      </view>
+    </view>
+        <view class="gird-item bottom-item">
+      <view class="gird-content">
+        <view class="gird-image"><image src="../resource/coupon@2x.png"></image></view>
+        <view class="gird-title"><text>兑换卡券</text></view>
+        <view class="gird-des"><text></text></view>
+      </view>
+    </view>
+        <view class="gird-item bottom-item">
+      <view class="gird-content">
+        <view class="gird-image"><image src="../resource/bankCard@2x.png"></image></view>
+        <view class="gird-title"><text>银行卡</text></view>
+        <view class="gird-des"><text>1张</text></view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="alert" wx:if="{{alertshow}}">tanchuan</view>
+<!--<view>
+    <button bindtap="goLogin">点击登录</button>
+ </view>-->

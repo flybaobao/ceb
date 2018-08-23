@@ -1,0 +1,5 @@
+<view class="top-navigator">
+    <view class="navigator-item" wx:key="" wx:for="{{topNavigator}}">
+     <text style="height:{{topNavigator.length}}" class="wx-title {{(index == curTab)? 'wx-curTab':''}}" bindtap="clickTab" data-index="{{index}}">{{item}}</text>
+    </view>
+</view>

@@ -1,0 +1,20 @@
+<view class="body-">
+  <swiper class="circle-images" indicator-dots="true" autoplay="true" interval="4000" duration="500" circular="true">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image class="circle-image" src="{{item.bannerImg}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="announces">
+    <image class="announce-icon" src="../resource/home_announce.png"></image>
+    <swiper class="circle-announces" autoplay="true" interval="4000" duration="500" circular="true">
+      <block wx:for="{{announceTitles}}">
+        <swiper-item>
+          <text class="announce-title">{{item.title}}</text>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</view>

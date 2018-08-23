@@ -1,0 +1,35 @@
+.top-navigator{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80rpx;
+    background: #ffffff;
+    border-bottom: 1px solid #E4E4E4;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navigator-item{
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.wx-title{
+    color: #000000;
+    line-height: 80rpx;
+    height: 80rpx;
+    font-size: 28rpx;
+}
+.wx-curTab{
+    font-size: 32rpx;
+    color: #f4554a;
+    border-bottom: 4rpx solid #f4554a;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 1);
+}
