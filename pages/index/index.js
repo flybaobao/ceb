@@ -3,7 +3,7 @@ var user = require('../../utils/user.js')
 var api = require('../../utils/api.js')
 Page({
   data: {
-    user:{userIco:"../resource/home_financing.png"},
+    user:{},
     centerData:{},
     incomeTotal:0
   },

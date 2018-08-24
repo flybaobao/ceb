@@ -1,37 +1,50 @@
 {
-  "pages":[
+  "pages": [
+    
+    "pages/home/home",
     "pages/list/productList",
     "pages/productDetail/productDetail",
     "pages/index/index",
+    "pages/discover/discover",
     "pages/login/login",
     "pages/signup/signup",
-    "pages/home/home",
-    "pages/myinvest/myinvest"
+    "pages/myinvest/myinvest",
+    "pages/webview/webview"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "red",
     "navigationBarTitleText": "",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle": "white"
   },
- "tabBar": {
-      "list": [{
+  "tabBar": {
+    "color": "#C7C7C7",
+    "selectedColor": "#FA5C5B",
+    "list": [
+      {
         "pagePath": "pages/home/home",
         "text": "热销",
-        "iconPath": "pages/resource/home_financing.png",
-        "selectedIconPath": "pages/resource/home_financing_selected.png"
+        "iconPath": "pages/resource/shouye1.png",
+        "selectedIconPath": "pages/resource/shouye.png"
       },
       {
         "pagePath": "pages/list/productList",
         "text": "理财",
-        "iconPath": "pages/resource/home_financing.png",
-        "selectedIconPath": "pages/resource/home_financing_selected.png"
+        "iconPath": "pages/resource/rexiao.png",
+        "selectedIconPath": "pages/resource/rexiao1.png"
       },
       {
         "pagePath": "pages/index/index",
         "text": "账户",
-        "iconPath": "pages/resource/home_account.png",
-        "selectedIconPath": "pages/resource/home_account_selected.png"
-      }]
-    }
+        "iconPath": "pages/resource/wode.png",
+        "selectedIconPath": "pages/resource/wode1.png"
+      },
+      {
+        "pagePath": "pages/discover/discover",
+        "text": "发现",
+        "iconPath": "pages/resource/gengduo.png",
+        "selectedIconPath": "pages/resource/gengduo1.png"
+      }
+    ]
+  }
 }

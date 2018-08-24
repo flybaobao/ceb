@@ -60,6 +60,7 @@ page{
 .userInfo-head image{
   height: 30px;
   width: 30px;
+  border-radius: 15px;
 }
 
 .userinfo {

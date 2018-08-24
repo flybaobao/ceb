@@ -1,4 +1,4 @@
-<view class="body-">
+<view>
   <swiper class="circle-images" indicator-dots="true" autoplay="true" interval="4000" duration="500" circular="true">
     <block wx:for="{{imgUrls}}">
       <swiper-item>
@@ -9,7 +9,7 @@
 
   <view class="announces">
     <image class="announce-icon" src="../resource/home_announce.png"></image>
-    <swiper class="circle-announces" autoplay="true" interval="4000" duration="500" circular="true">
+    <swiper class="circle-announces" autoplay="true" interval="4000" duration="500" circular="true" vertical="ture">
       <block wx:for="{{announceTitles}}">
         <swiper-item>
           <text class="announce-title">{{item.title}}</text>
@@ -17,4 +17,47 @@
       </block>
     </swiper>
   </view>
+
+  <view class='line-horizontal' />
+  <view class='fourbox'>
+    <view class='item' id="tap1" bindtap="pageJump">
+      <image src='../resource/ic_main_act2.png'></image>
+      <text class='tab-text'>小超福利</text>
+    </view>
+    <view class='item' id="tap2" bindtap="pageJump">
+      <image src='../resource/ic_main_act1.png'></image>
+      <text class='tab-text'>推荐有奖</text>
+    </view>
+    <view class='item' id="tap3" bindtap="pageJump">
+      <image src='../resource/ic_main_act3.png'></image>
+      <text class='tab-text'>关于我们</text>
+    </view>
+    <view class='item' id="tap4" bindtap="pageJump">
+      <image src='../resource/ic_main_act4.png'></image>
+      <text class='tab-text'>安全保障</text>
+    </view>
+  </view>
+  <view class='line-horizontal' style='height:20rpx' />
+
+  <view class='tab-text'>精选理财</view>
+  <view class='line-horizontal' />
+
+  <view class="listview" wx:for="{{list}}">
+    <navigator url='{{navigatorURL}}?productID={{item.productID}}'>
+      <view class="content">
+        <view class="pro-item pro-item-1">
+          <text>{{item.extraIncome}}</text>
+          <text class="item-title">预期年化(%)</text>
+        </view>
+        <view class='line-vertical'></view>
+        <view class="pro-item pro-item-2">
+          <text class="item-cricle">{{item.desc1}}</text>
+          <text class="item-small">{{item.desc2}}</text>
+        </view>
+      </view>
+      <view class='line-horizontal' style='margin-top:0rpx'> </view>
+    </navigator>
+  </view>
+
+
 </view>

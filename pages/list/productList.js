@@ -5,16 +5,20 @@ Page({
   data: {
     page:1,
     productList:[],
-    navigatorURL:"../productDetail/productDetail"
+    navigatorURL:"../productDetail/productDetail",
+    
   },
 
   getData(){
+    wx.showLoading({
+      title: '正在加载',
+    })
      var that = this;
      API.api.request(
        API.api.api_list,
      {page:that.data.page},
      function(res){
-        wx.stopPullDownRefresh()
+        wx.hideLoading();
         if(that.data.page == 1){
           that.setData({
               productList:res.data.return_data.list,
@@ -36,8 +40,12 @@ Page({
 
   onLoad: function () {
     this.getData()
+   
   },
   onPullDownRefresh: function () {
+    setTimeout(function(){
+
+    },1000);
     var page = 1
     this.setData({page:page})
     this.getData()

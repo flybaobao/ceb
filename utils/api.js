@@ -83,6 +83,7 @@ var Api = {
     api_list:"list",
     api_home:"qualityproductlist",
     api_center:"center",
+    api_discovery: "discovery",
     request:requset
 }
 

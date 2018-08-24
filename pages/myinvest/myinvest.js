@@ -2,6 +2,7 @@ Page({
   data:{
     topNavigator:["我的投资","我的订单"],
     curTab:0,
+    url:"",
   },
   onLoad:function(options){
     // 生命周期函数--监听页面加载
@@ -42,5 +43,6 @@ Page({
   /*   事件   */
   clickTab:function(evn){
     this.setData({curTab:evn.target.dataset.index})
+    
   }
 })
